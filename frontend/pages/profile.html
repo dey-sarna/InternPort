@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile | InternHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>InternHub</h2>
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="profile.html">My Profile</a>
+        <a href="internships.html">Internships</a>
+        <a href="my-applications.html">My Applications</a>
+        <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="dashboard-main">
+        <div class="dashboard-header">
+            <div>
+                <h1>My Profile</h1>
+                <p>Update your academic details, skills, and personal information.</p>
+            </div>
+        </div>
+
+        <section class="form-card">
+            <form id="profileForm">
+                <label>Full Name</label>
+                <input type="text" id="name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" disabled>
+
+                <label>Department</label>
+                <input type="text" id="department" placeholder="Example: CSE">
+
+                <label>Semester</label>
+                <input type="text" id="semester" placeholder="Example: 4th">
+
+                <label>Phone</label>
+                <input type="text" id="phone" placeholder="Example: 017xxxxxxxx">
+
+                <label>Skills</label>
+                <textarea id="skills" placeholder="Example: HTML, CSS, JavaScript"></textarea>
+
+                <label>Bio</label>
+                <textarea id="bio" placeholder="Write a short bio about yourself"></textarea>
+
+                <button type="submit">Update Profile</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

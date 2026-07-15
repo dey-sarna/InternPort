@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Applications | InternHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>InternHub</h2>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="manage-internships.html">Manage Internships</a>
+        <a href="manage-applications.html">Applications</a>
+        <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="dashboard-main">
+        <div class="dashboard-header">
+            <div>
+                <h1>Manage Applications</h1>
+                <p>Review student applications and update their status.</p>
+            </div>
+        </div>
+
+        <section id="adminApplicationList" class="admin-list"></section>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/manageApplications.js"></script>
+</body>
+</html>

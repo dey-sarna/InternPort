@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Internships | InternHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>InternHub</h2>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="manage-internships.html">Manage Internships</a>
+        <a href="manage-applications.html">Applications</a>
+        <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="dashboard-main">
+        <div class="dashboard-header">
+            <div>
+                <h1>Manage Internships</h1>
+                <p>Add, update, and delete internship opportunities.</p>
+            </div>
+        </div>
+
+        <section class="form-card">
+            <form id="internshipForm">
+                <input type="hidden" id="internshipId">
+
+                <label>Title</label>
+                <input type="text" id="title" required>
+
+                <label>Company</label>
+                <input type="text" id="company" required>
+
+                <label>Location</label>
+                <input type="text" id="location">
+
+                <label>Type</label>
+                <select id="type">
+                    <option value="Remote">Remote</option>
+                    <option value="On-site">On-site</option>
+                    <option value="Hybrid">Hybrid</option>
+                </select>
+
+                <label>Duration</label>
+                <input type="text" id="duration">
+
+                <label>Description</label>
+                <textarea id="description" required></textarea>
+
+                <label>Requirements</label>
+                <textarea id="requirements"></textarea>
+
+                <label>Deadline</label>
+                <input type="date" id="deadline">
+
+                <button type="submit" id="submitBtn">Add Internship</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section id="adminInternshipList" class="admin-list"></section>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/manageInternships.js"></script>
+</body>
+</html>

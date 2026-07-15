@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | InternHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+
+            <h2>Create Account</h2>
+
+            <p>
+                Register to start applying for internships.
+            </p>
+
+            <form id="registerForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    autocomplete="name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    autocomplete="email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+            <p class="small-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+
+</body>
+</html>

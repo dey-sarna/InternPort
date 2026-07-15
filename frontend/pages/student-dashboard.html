@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard | InternPort</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>InternHub</h2>
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="profile.html">My Profile</a>
+        <a href="internships.html">Internships</a>
+        <a href="my-applications.html">My Applications</a>
+        <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="dashboard-main">
+        <div class="dashboard-header">
+            <div>
+                <h1>Student Dashboard</h1>
+                <p>Track your internship application progress.</p>
+            </div>
+        </div>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3 id="totalApplications">0</h3>
+                <p>Total Applications</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="acceptedApplications">0</h3>
+                <p>Accepted</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingApplications">0</h3>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="rejectedApplications">0</h3>
+                <p>Rejected</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

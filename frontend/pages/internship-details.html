@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internship Details | InternHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>InternHub</h2>
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="profile.html">My Profile</a>
+        <a href="internships.html">Internships</a>
+        <a href="my-applications.html">My Applications</a>
+        <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="dashboard-main">
+        <div id="detailsContainer"></div>
+        <p id="message"></p>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/internships.js"></script>
+</body>
+</html>
