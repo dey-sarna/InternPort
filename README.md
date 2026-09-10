@@ -258,8 +258,6 @@ internship-management-system/
 └── README.md
 ```
 
-> `node_modules/`, `.git/`, and sensitive environment files should not be committed to the repository.
-
 ### Structure Overview
 
 - **config/** handles the MySQL database connection.
@@ -491,59 +489,6 @@ The frontend currently expects the backend API at:
 http://localhost:5000/api
 ```
 
-If you deploy the backend or use a different port, update `frontend/js/api.js`.
-
----
-
-## 🔒 Environment & Git Safety
-
-Never push real environment credentials to GitHub.
-
-A root `.gitignore` can include:
-
-```gitignore
-# Dependencies
-node_modules/
-
-# Environment variables
-.env
-
-# Logs
-*.log
-```
-
-If `.env` has already been committed, remove it from Git tracking and rotate any exposed credentials.
-
----
-
-## 📸 Screenshots
-
-Add a `screenshots/` folder and replace the comments below with your actual screenshots.
-
-### 🏠 Landing Page
-
-<!-- ![Landing Page](./screenshots/landing-page.png) -->
-
-### 👨‍🎓 Student Dashboard
-
-<!-- ![Student Dashboard](./screenshots/student-dashboard.png) -->
-
-### 🔍 Internship Listings
-
-<!-- ![Internship Listings](./screenshots/internships.png) -->
-
-### 📝 Student Profile
-
-<!-- ![Student Profile](./screenshots/profile.png) -->
-
-### 🛡️ Admin Dashboard
-
-<!-- ![Admin Dashboard](./screenshots/admin-dashboard.png) -->
-
-### 📋 Manage Applications
-
-<!-- ![Manage Applications](./screenshots/manage-applications.png) -->
-
 ---
 
 ## 🎯 Project Objectives
@@ -591,12 +536,10 @@ Potential improvements for future versions include:
 - Advanced search and pagination
 - Skills-based internship recommendations
 - Deadline reminders
-- Admin search and filtering for applications
 - Analytics and reporting dashboard
 - Password reset and email verification
 - Refresh-token based authentication
 - Cloud deployment and production configuration
-- Responsive UI improvements
 
 ---
 
